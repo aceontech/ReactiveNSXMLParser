@@ -1,0 +1,18 @@
+PODS:
+  - ReactiveCocoa (2.2):
+    - ReactiveCocoa/Core
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/Core (2.2):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.2)
+  - TRVSMonitor (0.0.3)
+
+DEPENDENCIES:
+  - ReactiveCocoa (~> 2.2.0)
+  - TRVSMonitor
+
+SPEC CHECKSUMS:
+  ReactiveCocoa: 5b340678dc3168d6c9a2ca70fb83df683c08ca02
+  TRVSMonitor: cc2b3d6f4cf18639464f6b8295f1b4722f4d4f14
+
+COCOAPODS: 0.28.0

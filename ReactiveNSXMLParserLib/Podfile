@@ -1,0 +1,6 @@
+pod 'ReactiveCocoa', '~> 2.2.0'
+
+target "ReactiveNSXMLParserLibTests", :exclusive => true do
+    pod 'TRVSMonitor'
+end
+
