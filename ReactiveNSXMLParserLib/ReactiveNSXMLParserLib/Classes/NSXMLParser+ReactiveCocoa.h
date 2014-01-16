@@ -58,4 +58,19 @@ typedef BOOL (^ElementFilterBlock)(NSString *elementName);
 + (RACSignal *)rac_dictionaryFromURL:(NSURL *)url
                        elementFilter:(ElementFilterBlock)filterBlock;
 
+/**
+ * Parses an XML file from a binary blob.
+ * See -rac_dictionaryFromURL:elementFilter:
+ */
++ (RACSignal *)rac_dictionaryFromData:(NSData *)data
+                        elementFilter:(ElementFilterBlock)filterBlock;
+
+/**
+ * Convenience wrapper for +rac_dictionaryFromData. Converts NSString to NSData.
+ * BLOCKING!
+ * See -rac_dictionaryFromURL:elementFilter:
+ */
++ (RACSignal *)rac_dictionaryFromString:(NSString *)string
+                          elementFilter:(ElementFilterBlock)filterBlock;
+
 @end

@@ -40,6 +40,8 @@
  */
 @interface ReactiveNSXMLParserLibTests : XCTestCase
 @property (nonatomic,copy) ElementFilterBlock filterBlock;
+@property (nonatomic,copy) NSString *xmlString;
+@property (nonatomic,copy) NSData *xmlData;
 @end
 
 @implementation ReactiveNSXMLParserLibTests
@@ -55,7 +57,14 @@
     
     self.filterBlock = ^BOOL(NSString *elementName) {
         return [elementFilter containsObject:elementName];
-    };}
+    };
+    
+    // Some XML in string format
+    self.xmlString = @"<rss><item><title>Test 1</title></item><item><title>Test 2</title></item></rss>";
+    
+    // Some XML in NSData format
+    self.xmlData = [self.xmlString dataUsingEncoding:NSUTF8StringEncoding];
+}
 
 - (void)tearDown
 {
@@ -70,11 +79,47 @@
  * Only parses a subset of elements (see self.filterBlock).
  * Requires an internet connection.
  */
-- (void)testParseWindowsWeekly
+- (void)testParseWindowsWeeklyFromURL
 {
     TRVSMonitor *monitor = [TRVSMonitor monitor];
     
     [[NSXMLParser rac_dictionaryFromURL:[NSURL URLWithString:@"http://feeds.twit.tv/ww.xml"] elementFilter:self.filterBlock] subscribeNext:^(NSDictionary *feed) {
+        XCTAssertTrue([feed count] > 0, @"Feed should contain child nodes");
+        
+    } error:^(NSError *error) {
+        XCTFail(@"%@", error);
+        [monitor signal];
+        
+    } completed:^{
+        [monitor signal];
+    }];
+    
+    [monitor wait];
+}
+
+- (void)testParseWindowsWeeklyFromData
+{
+    TRVSMonitor *monitor = [TRVSMonitor monitor];
+    
+    [[NSXMLParser rac_dictionaryFromData:self.xmlData elementFilter:self.filterBlock] subscribeNext:^(NSDictionary *feed) {
+        XCTAssertTrue([feed count] > 0, @"Feed should contain child nodes");
+
+    } error:^(NSError *error) {
+        XCTFail(@"%@", error);
+        [monitor signal];
+        
+    } completed:^{
+        [monitor signal];
+    }];
+    
+    [monitor wait];
+}
+
+- (void)testParseWindowsWeeklyFromString
+{
+    TRVSMonitor *monitor = [TRVSMonitor monitor];
+    
+    [[NSXMLParser rac_dictionaryFromString:self.xmlString elementFilter:self.filterBlock] subscribeNext:^(NSDictionary *feed) {
         XCTAssertTrue([feed count] > 0, @"Feed should contain child nodes");
         
     } error:^(NSError *error) {

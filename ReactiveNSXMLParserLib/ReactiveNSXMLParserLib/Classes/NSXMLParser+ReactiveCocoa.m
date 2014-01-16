@@ -34,31 +34,61 @@
 
 + (RACSignal *)rac_parseURL:(NSURL *)url
 {
+    return [self rac_parseWithParser:[[NSXMLParser alloc] initWithContentsOfURL:url]];
+}
+
++ (RACSignal *)rac_parseData:(NSData *)data
+{
+    return [self rac_parseWithParser:[[NSXMLParser alloc] initWithData:data]];
+}
+
++ (RACSignal *)rac_dictionaryFromString:(NSString *)string elementFilter:(ElementFilterBlock)filterBlock
+{
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    return [self rac_dictionaryFromData:data elementFilter:filterBlock];
+}
+
++ (RACSignal *)rac_dictionaryFromURL:(NSURL *)url elementFilter:(ElementFilterBlock)filterBlock
+{
+    return [self rac_dictionaryFromSignal:[self rac_parseURL:url] elementfilter:filterBlock];
+}
+
++ (RACSignal *)rac_dictionaryFromData:(NSData *)data elementFilter:(ElementFilterBlock)filterBlock
+{
+    return [self rac_dictionaryFromSignal:[self rac_parseData:data] elementfilter:filterBlock];
+}
+
+#pragma mark - Internal
+
+/**
+ * Parse a XML using a pre-init'ed parser.
+ */
++ (RACSignal *)rac_parseWithParser:(NSXMLParser *)parser
+{
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
         return [[RACScheduler scheduler] schedule:^{
             NSXMLParserRACDelegate * delegate = [[NSXMLParserRACDelegate alloc] init];
             [delegate.elementParsed subscribe:subscriber];
             
-            NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
             parser.delegate = delegate;
             [parser parse];
         }];
     }];
 }
 
-// Parsing algorythm inspired by http://troybrant.net/blog/2010/09/simple-xml-to-nsdictionary-converter
-+ (RACSignal *)rac_dictionaryFromURL:(NSURL *)url elementFilter:(ElementFilterBlock)filterBlock
++ (RACSignal *)rac_dictionaryFromSignal:(RACSignal *)signal elementfilter:(ElementFilterBlock)filterBlock
 {
+    // Parsing algorythm inspired by http://troybrant.net/blog/2010/09/simple-xml-to-nsdictionary-converter
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
         __block NSMutableArray *stack = [@[ [@{} mutableCopy] ] mutableCopy];
         __block NSXMLParserRACElement *currentElement;
         
-        [[[NSXMLParser rac_parseURL:url] filter:^BOOL(NSXMLParserRACElement *element) {
+        [[signal filter:^BOOL(NSXMLParserRACElement *element) {
             // If provided delegate to filterBlock to determine which elements to ignore
             return filterBlock ? filterBlock(element.name) : YES;
-        
+            
         }] subscribeNext:^(NSXMLParserRACElement *element) {
             if (element.phase == NSXMLParserRACElementPhaseOpen)
             {
