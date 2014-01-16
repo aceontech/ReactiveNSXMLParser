@@ -25,16 +25,32 @@
 //
 
 typedef NS_ENUM(NSInteger, NSXMLParserRACElementPhase) {
-    NSXMLParserRACElementPhaseData = 0,
-    NSXMLParserRACElementPhaseOpen,
-    NSXMLParserRACElementPhaseClose
+    NSXMLParserRACElementPhaseData = 0, // Element contains a valid self.body
+    NSXMLParserRACElementPhaseOpen,     // Element was opened
+    NSXMLParserRACElementPhaseClose     // Element was closed
 };
 
 @interface NSXMLParserRACElement : NSObject
 
+/**
+ * Defines which phase the parser is currently in.
+ * See NSXMLParserRACElementPhase enum.
+ */
 @property (nonatomic) NSXMLParserRACElementPhase phase;
+
+/**
+ * The element's name. E.g. <title> becomes @"title".
+ */
 @property (nonatomic,copy) NSString *name;
+
+/**
+ * The element's body, which was read out as a string or CData block
+ */
 @property (nonatomic,strong) NSMutableString *body;
+
+/**
+ * The element's attributes
+ */
 @property (nonatomic,copy) NSDictionary *attributes;
 
 @end
