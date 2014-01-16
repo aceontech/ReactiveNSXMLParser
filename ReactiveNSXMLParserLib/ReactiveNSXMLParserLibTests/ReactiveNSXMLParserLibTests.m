@@ -170,7 +170,7 @@
                          [NSXMLParser rac_dictionaryFromURL:[NSURL URLWithString:@"http://feeds.twit.tv/sn.xml"] elementFilter:self.filterBlock]];
     
     // [RACSignal -concat] creates a list of aforementioned signals an executes
-    // them *sequentially*. If desire parallel execution, you could use one of
+    // them *sequentially*. If you desire parallel execution, you could use one of
     // the [RACSignal -conmbine..] methods.
     [[[[RACSignal concat:signals] map:^NSDictionary*(NSDictionary *result) {
         // [RACSignal -map:] transforms the dictionary into the desired data type
