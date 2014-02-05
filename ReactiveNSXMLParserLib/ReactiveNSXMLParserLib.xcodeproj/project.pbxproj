@@ -1,1075 +1,527 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>33315738847844769BEE52B0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-ReactiveNSXMLParserLibTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7DBC0C49F5FF410E97C8D312</key>
-		<dict>
-			<key>fileRef</key>
-			<string>33315738847844769BEE52B0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7F2895748F7C4A779723D332</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3D43E6A210E404AB430BD95</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-ReactiveNSXMLParserLibTests.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-ReactiveNSXMLParserLibTests.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C56F2FD0DD474105BED40680</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D5A0B86DC1E94EBBA8DD6C9F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D71380D227CD4483B77F8928</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D5A0B86DC1E94EBBA8DD6C9F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E3EA5BEBC93340878D92F22D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-ReactiveNSXMLParserLibTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>EB5BD7F36FA14B91B2A56E21</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>F55525234E61476E8C2722DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>FA79789C1886C39A00F9A865</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA7978AA1886C39A00F9A865</string>
-				<string>FA7978BE1886C39A00F9A865</string>
-				<string>FA7978A71886C39A00F9A865</string>
-				<string>FA7978A61886C39A00F9A865</string>
-				<string>7F2895748F7C4A779723D332</string>
-				<string>C3D43E6A210E404AB430BD95</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA79789D1886C39A00F9A865</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Alex Manarpies</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>FA7978A01886C39A00F9A865</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>FA79789C1886C39A00F9A865</string>
-			<key>productRefGroup</key>
-			<string>FA7978A61886C39A00F9A865</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>FA7978A41886C39A00F9A865</string>
-				<string>FA7978B41886C39A00F9A865</string>
-			</array>
-		</dict>
-		<key>FA7978A01886C39A00F9A865</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FA7978C61886C39A00F9A865</string>
-				<string>FA7978C71886C39A00F9A865</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FA7978A11886C39A00F9A865</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FA7978D11886C40700F9A865</string>
-				<string>FA7978D71886C41900F9A865</string>
-				<string>FA7978D61886C41900F9A865</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FA7978A21886C39A00F9A865</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FA7978A91886C39A00F9A865</string>
-				<string>D71380D227CD4483B77F8928</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FA7978A31886C39A00F9A865</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>include/$(PRODUCT_NAME)</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FA7978A41886C39A00F9A865</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FA7978C81886C39A00F9A865</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F55525234E61476E8C2722DF</string>
-				<string>FA7978A11886C39A00F9A865</string>
-				<string>FA7978A21886C39A00F9A865</string>
-				<string>FA7978A31886C39A00F9A865</string>
-				<string>EB5BD7F36FA14B91B2A56E21</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>ReactiveNSXMLParserLib</string>
-			<key>productName</key>
-			<string>ReactiveNSXMLParserLib</string>
-			<key>productReference</key>
-			<string>FA7978A51886C39A00F9A865</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>FA7978A51886C39A00F9A865</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libReactiveNSXMLParserLib.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FA7978A61886C39A00F9A865</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA7978A51886C39A00F9A865</string>
-				<string>FA7978B51886C39A00F9A865</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978A71886C39A00F9A865</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA7978A81886C39A00F9A865</string>
-				<string>FA7978B61886C39A00F9A865</string>
-				<string>FA7978B91886C39A00F9A865</string>
-				<string>D5A0B86DC1E94EBBA8DD6C9F</string>
-				<string>33315738847844769BEE52B0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978A81886C39A00F9A865</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>FA7978A91886C39A00F9A865</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA7978A81886C39A00F9A865</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA7978AA1886C39A00F9A865</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA7978CE1886C3DE00F9A865</string>
-				<string>FA7978AB1886C39A00F9A865</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ReactiveNSXMLParserLib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978AB1886C39A00F9A865</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA7978AC1886C39A00F9A865</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978AC1886C39A00F9A865</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ReactiveNSXMLParserLib-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978B11886C39A00F9A865</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FA7978C51886C39A00F9A865</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FA7978B21886C39A00F9A865</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FA7978B71886C39A00F9A865</string>
-				<string>FA7978BA1886C39A00F9A865</string>
-				<string>FA7978BD1886C39A00F9A865</string>
-				<string>FA7978B81886C39A00F9A865</string>
-				<string>7DBC0C49F5FF410E97C8D312</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FA7978B31886C39A00F9A865</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FA7978C31886C39A00F9A865</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FA7978B41886C39A00F9A865</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FA7978CB1886C39A00F9A865</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C56F2FD0DD474105BED40680</string>
-				<string>FA7978B11886C39A00F9A865</string>
-				<string>FA7978B21886C39A00F9A865</string>
-				<string>FA7978B31886C39A00F9A865</string>
-				<string>E3EA5BEBC93340878D92F22D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>FA7978BC1886C39A00F9A865</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>ReactiveNSXMLParserLibTests</string>
-			<key>productName</key>
-			<string>ReactiveNSXMLParserLibTests</string>
-			<key>productReference</key>
-			<string>FA7978B51886C39A00F9A865</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>FA7978B51886C39A00F9A865</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>ReactiveNSXMLParserLibTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FA7978B61886C39A00F9A865</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>FA7978B71886C39A00F9A865</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA7978B61886C39A00F9A865</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA7978B81886C39A00F9A865</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA7978A81886C39A00F9A865</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA7978B91886C39A00F9A865</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>FA7978BA1886C39A00F9A865</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA7978B91886C39A00F9A865</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA7978BB1886C39A00F9A865</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>FA79789D1886C39A00F9A865</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>FA7978A41886C39A00F9A865</string>
-			<key>remoteInfo</key>
-			<string>ReactiveNSXMLParserLib</string>
-		</dict>
-		<key>FA7978BC1886C39A00F9A865</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>FA7978A41886C39A00F9A865</string>
-			<key>targetProxy</key>
-			<string>FA7978BB1886C39A00F9A865</string>
-		</dict>
-		<key>FA7978BD1886C39A00F9A865</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA7978A51886C39A00F9A865</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA7978BE1886C39A00F9A865</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA7978C41886C39A00F9A865</string>
-				<string>FA7978BF1886C39A00F9A865</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ReactiveNSXMLParserLibTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978BF1886C39A00F9A865</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA7978C01886C39A00F9A865</string>
-				<string>FA7978C11886C39A00F9A865</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978C01886C39A00F9A865</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>ReactiveNSXMLParserLibTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978C11886C39A00F9A865</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA7978C21886C39A00F9A865</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978C21886C39A00F9A865</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978C31886C39A00F9A865</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA7978C11886C39A00F9A865</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA7978C41886C39A00F9A865</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ReactiveNSXMLParserLibTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978C51886C39A00F9A865</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA7978C41886C39A00F9A865</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA7978C61886C39A00F9A865</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FA7978C71886C39A00F9A865</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FA7978C81886C39A00F9A865</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FA7978C91886C39A00F9A865</string>
-				<string>FA7978CA1886C39A00F9A865</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FA7978C91886C39A00F9A865</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7F2895748F7C4A779723D332</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/ReactiveNSXMLParserLib.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ReactiveNSXMLParserLib/ReactiveNSXMLParserLib-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FA7978CA1886C39A00F9A865</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7F2895748F7C4A779723D332</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/ReactiveNSXMLParserLib.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ReactiveNSXMLParserLib/ReactiveNSXMLParserLib-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FA7978CB1886C39A00F9A865</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FA7978CC1886C39A00F9A865</string>
-				<string>FA7978CD1886C39A00F9A865</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FA7978CC1886C39A00F9A865</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C3D43E6A210E404AB430BD95</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ReactiveNSXMLParserLib/ReactiveNSXMLParserLib-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>ReactiveNSXMLParserLibTests/ReactiveNSXMLParserLibTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FA7978CD1886C39A00F9A865</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C3D43E6A210E404AB430BD95</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ReactiveNSXMLParserLib/ReactiveNSXMLParserLib-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>ReactiveNSXMLParserLibTests/ReactiveNSXMLParserLibTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FA7978CE1886C3DE00F9A865</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA7978CF1886C40700F9A865</string>
-				<string>FA7978D01886C40700F9A865</string>
-				<string>FA7978D21886C41900F9A865</string>
-				<string>FA7978D31886C41900F9A865</string>
-				<string>FA7978D41886C41900F9A865</string>
-				<string>FA7978D51886C41900F9A865</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978CF1886C40700F9A865</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSXMLParser+ReactiveCocoa.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978D01886C40700F9A865</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSXMLParser+ReactiveCocoa.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978D11886C40700F9A865</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA7978D01886C40700F9A865</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA7978D21886C41900F9A865</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSXMLParserRACDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978D31886C41900F9A865</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSXMLParserRACDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978D41886C41900F9A865</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSXMLParserRACElement.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978D51886C41900F9A865</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSXMLParserRACElement.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA7978D61886C41900F9A865</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA7978D31886C41900F9A865</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA7978D71886C41900F9A865</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA7978D51886C41900F9A865</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>FA79789D1886C39A00F9A865</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DBC0C49F5FF410E97C8D312 /* libPods-ReactiveNSXMLParserLibTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33315738847844769BEE52B0 /* libPods-ReactiveNSXMLParserLibTests.a */; };
+		D71380D227CD4483B77F8928 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A0B86DC1E94EBBA8DD6C9F /* libPods.a */; };
+		FA7978A91886C39A00F9A865 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7978A81886C39A00F9A865 /* Foundation.framework */; };
+		FA7978B71886C39A00F9A865 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7978B61886C39A00F9A865 /* XCTest.framework */; };
+		FA7978B81886C39A00F9A865 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7978A81886C39A00F9A865 /* Foundation.framework */; };
+		FA7978BA1886C39A00F9A865 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7978B91886C39A00F9A865 /* UIKit.framework */; };
+		FA7978BD1886C39A00F9A865 /* libReactiveNSXMLParserLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7978A51886C39A00F9A865 /* libReactiveNSXMLParserLib.a */; };
+		FA7978C31886C39A00F9A865 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA7978C11886C39A00F9A865 /* InfoPlist.strings */; };
+		FA7978C51886C39A00F9A865 /* ReactiveNSXMLParserLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7978C41886C39A00F9A865 /* ReactiveNSXMLParserLibTests.m */; };
+		FA7978D11886C40700F9A865 /* NSXMLParser+ReactiveCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7978D01886C40700F9A865 /* NSXMLParser+ReactiveCocoa.m */; };
+		FA7978D61886C41900F9A865 /* NSXMLParserRACDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7978D31886C41900F9A865 /* NSXMLParserRACDelegate.m */; };
+		FA7978D71886C41900F9A865 /* NSXMLParserRACElement.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7978D51886C41900F9A865 /* NSXMLParserRACElement.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA7978BB1886C39A00F9A865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA79789D1886C39A00F9A865 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7978A41886C39A00F9A865;
+			remoteInfo = ReactiveNSXMLParserLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA7978A31886C39A00F9A865 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		33315738847844769BEE52B0 /* libPods-ReactiveNSXMLParserLibTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveNSXMLParserLibTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2895748F7C4A779723D332 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C3D43E6A210E404AB430BD95 /* Pods-ReactiveNSXMLParserLibTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveNSXMLParserLibTests.xcconfig"; path = "Pods/Pods-ReactiveNSXMLParserLibTests.xcconfig"; sourceTree = "<group>"; };
+		D5A0B86DC1E94EBBA8DD6C9F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7978A51886C39A00F9A865 /* libReactiveNSXMLParserLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactiveNSXMLParserLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7978A81886C39A00F9A865 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA7978AC1886C39A00F9A865 /* ReactiveNSXMLParserLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveNSXMLParserLib-Prefix.pch"; sourceTree = "<group>"; };
+		FA7978B51886C39A00F9A865 /* ReactiveNSXMLParserLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveNSXMLParserLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7978B61886C39A00F9A865 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA7978B91886C39A00F9A865 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FA7978C01886C39A00F9A865 /* ReactiveNSXMLParserLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveNSXMLParserLibTests-Info.plist"; sourceTree = "<group>"; };
+		FA7978C21886C39A00F9A865 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA7978C41886C39A00F9A865 /* ReactiveNSXMLParserLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveNSXMLParserLibTests.m; sourceTree = "<group>"; };
+		FA7978CF1886C40700F9A865 /* NSXMLParser+ReactiveCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLParser+ReactiveCocoa.h"; sourceTree = "<group>"; };
+		FA7978D01886C40700F9A865 /* NSXMLParser+ReactiveCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSXMLParser+ReactiveCocoa.m"; sourceTree = "<group>"; };
+		FA7978D21886C41900F9A865 /* NSXMLParserRACDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSXMLParserRACDelegate.h; sourceTree = "<group>"; };
+		FA7978D31886C41900F9A865 /* NSXMLParserRACDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSXMLParserRACDelegate.m; sourceTree = "<group>"; };
+		FA7978D41886C41900F9A865 /* NSXMLParserRACElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSXMLParserRACElement.h; sourceTree = "<group>"; };
+		FA7978D51886C41900F9A865 /* NSXMLParserRACElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSXMLParserRACElement.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA7978A21886C39A00F9A865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7978A91886C39A00F9A865 /* Foundation.framework in Frameworks */,
+				D71380D227CD4483B77F8928 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7978B21886C39A00F9A865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7978B71886C39A00F9A865 /* XCTest.framework in Frameworks */,
+				FA7978BA1886C39A00F9A865 /* UIKit.framework in Frameworks */,
+				FA7978BD1886C39A00F9A865 /* libReactiveNSXMLParserLib.a in Frameworks */,
+				FA7978B81886C39A00F9A865 /* Foundation.framework in Frameworks */,
+				7DBC0C49F5FF410E97C8D312 /* libPods-ReactiveNSXMLParserLibTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA79789C1886C39A00F9A865 = {
+			isa = PBXGroup;
+			children = (
+				FA7978AA1886C39A00F9A865 /* ReactiveNSXMLParserLib */,
+				FA7978BE1886C39A00F9A865 /* ReactiveNSXMLParserLibTests */,
+				FA7978A71886C39A00F9A865 /* Frameworks */,
+				FA7978A61886C39A00F9A865 /* Products */,
+				7F2895748F7C4A779723D332 /* Pods.xcconfig */,
+				C3D43E6A210E404AB430BD95 /* Pods-ReactiveNSXMLParserLibTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		FA7978A61886C39A00F9A865 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA7978A51886C39A00F9A865 /* libReactiveNSXMLParserLib.a */,
+				FA7978B51886C39A00F9A865 /* ReactiveNSXMLParserLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA7978A71886C39A00F9A865 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA7978A81886C39A00F9A865 /* Foundation.framework */,
+				FA7978B61886C39A00F9A865 /* XCTest.framework */,
+				FA7978B91886C39A00F9A865 /* UIKit.framework */,
+				D5A0B86DC1E94EBBA8DD6C9F /* libPods.a */,
+				33315738847844769BEE52B0 /* libPods-ReactiveNSXMLParserLibTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA7978AA1886C39A00F9A865 /* ReactiveNSXMLParserLib */ = {
+			isa = PBXGroup;
+			children = (
+				FA7978CE1886C3DE00F9A865 /* Classes */,
+				FA7978AB1886C39A00F9A865 /* Supporting Files */,
+			);
+			path = ReactiveNSXMLParserLib;
+			sourceTree = "<group>";
+		};
+		FA7978AB1886C39A00F9A865 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA7978AC1886C39A00F9A865 /* ReactiveNSXMLParserLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA7978BE1886C39A00F9A865 /* ReactiveNSXMLParserLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA7978C41886C39A00F9A865 /* ReactiveNSXMLParserLibTests.m */,
+				FA7978BF1886C39A00F9A865 /* Supporting Files */,
+			);
+			path = ReactiveNSXMLParserLibTests;
+			sourceTree = "<group>";
+		};
+		FA7978BF1886C39A00F9A865 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA7978C01886C39A00F9A865 /* ReactiveNSXMLParserLibTests-Info.plist */,
+				FA7978C11886C39A00F9A865 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA7978CE1886C3DE00F9A865 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA7978CF1886C40700F9A865 /* NSXMLParser+ReactiveCocoa.h */,
+				FA7978D01886C40700F9A865 /* NSXMLParser+ReactiveCocoa.m */,
+				FA7978D21886C41900F9A865 /* NSXMLParserRACDelegate.h */,
+				FA7978D31886C41900F9A865 /* NSXMLParserRACDelegate.m */,
+				FA7978D41886C41900F9A865 /* NSXMLParserRACElement.h */,
+				FA7978D51886C41900F9A865 /* NSXMLParserRACElement.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA7978A41886C39A00F9A865 /* ReactiveNSXMLParserLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7978C81886C39A00F9A865 /* Build configuration list for PBXNativeTarget "ReactiveNSXMLParserLib" */;
+			buildPhases = (
+				F55525234E61476E8C2722DF /* Check Pods Manifest.lock */,
+				FA7978A11886C39A00F9A865 /* Sources */,
+				FA7978A21886C39A00F9A865 /* Frameworks */,
+				FA7978A31886C39A00F9A865 /* CopyFiles */,
+				EB5BD7F36FA14B91B2A56E21 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveNSXMLParserLib;
+			productName = ReactiveNSXMLParserLib;
+			productReference = FA7978A51886C39A00F9A865 /* libReactiveNSXMLParserLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FA7978B41886C39A00F9A865 /* ReactiveNSXMLParserLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7978CB1886C39A00F9A865 /* Build configuration list for PBXNativeTarget "ReactiveNSXMLParserLibTests" */;
+			buildPhases = (
+				C56F2FD0DD474105BED40680 /* Check Pods Manifest.lock */,
+				FA7978B11886C39A00F9A865 /* Sources */,
+				FA7978B21886C39A00F9A865 /* Frameworks */,
+				FA7978B31886C39A00F9A865 /* Resources */,
+				E3EA5BEBC93340878D92F22D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA7978BC1886C39A00F9A865 /* PBXTargetDependency */,
+			);
+			name = ReactiveNSXMLParserLibTests;
+			productName = ReactiveNSXMLParserLibTests;
+			productReference = FA7978B51886C39A00F9A865 /* ReactiveNSXMLParserLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA79789D1886C39A00F9A865 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Alex Manarpies";
+			};
+			buildConfigurationList = FA7978A01886C39A00F9A865 /* Build configuration list for PBXProject "ReactiveNSXMLParserLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA79789C1886C39A00F9A865;
+			productRefGroup = FA7978A61886C39A00F9A865 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				FA7978A41886C39A00F9A865 /* ReactiveNSXMLParserLib */,
+				FA7978B41886C39A00F9A865 /* ReactiveNSXMLParserLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA7978B31886C39A00F9A865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7978C31886C39A00F9A865 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C56F2FD0DD474105BED40680 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3EA5BEBC93340878D92F22D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ReactiveNSXMLParserLibTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB5BD7F36FA14B91B2A56E21 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F55525234E61476E8C2722DF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA7978A11886C39A00F9A865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7978D11886C40700F9A865 /* NSXMLParser+ReactiveCocoa.m in Sources */,
+				FA7978D71886C41900F9A865 /* NSXMLParserRACElement.m in Sources */,
+				FA7978D61886C41900F9A865 /* NSXMLParserRACDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7978B11886C39A00F9A865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7978C51886C39A00F9A865 /* ReactiveNSXMLParserLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA7978BC1886C39A00F9A865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7978A41886C39A00F9A865 /* ReactiveNSXMLParserLib */;
+			targetProxy = FA7978BB1886C39A00F9A865 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA7978C11886C39A00F9A865 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7978C21886C39A00F9A865 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA7978C61886C39A00F9A865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA7978C71886C39A00F9A865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA7978C91886C39A00F9A865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F2895748F7C4A779723D332 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/ReactiveNSXMLParserLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReactiveNSXMLParserLib/ReactiveNSXMLParserLib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FA7978CA1886C39A00F9A865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F2895748F7C4A779723D332 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/ReactiveNSXMLParserLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReactiveNSXMLParserLib/ReactiveNSXMLParserLib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FA7978CC1886C39A00F9A865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3D43E6A210E404AB430BD95 /* Pods-ReactiveNSXMLParserLibTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReactiveNSXMLParserLib/ReactiveNSXMLParserLib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ReactiveNSXMLParserLibTests/ReactiveNSXMLParserLibTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FA7978CD1886C39A00F9A865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3D43E6A210E404AB430BD95 /* Pods-ReactiveNSXMLParserLibTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReactiveNSXMLParserLib/ReactiveNSXMLParserLib-Prefix.pch";
+				INFOPLIST_FILE = "ReactiveNSXMLParserLibTests/ReactiveNSXMLParserLibTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA7978A01886C39A00F9A865 /* Build configuration list for PBXProject "ReactiveNSXMLParserLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7978C61886C39A00F9A865 /* Debug */,
+				FA7978C71886C39A00F9A865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7978C81886C39A00F9A865 /* Build configuration list for PBXNativeTarget "ReactiveNSXMLParserLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7978C91886C39A00F9A865 /* Debug */,
+				FA7978CA1886C39A00F9A865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA7978CB1886C39A00F9A865 /* Build configuration list for PBXNativeTarget "ReactiveNSXMLParserLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7978CC1886C39A00F9A865 /* Debug */,
+				FA7978CD1886C39A00F9A865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA79789D1886C39A00F9A865 /* Project object */;
+}

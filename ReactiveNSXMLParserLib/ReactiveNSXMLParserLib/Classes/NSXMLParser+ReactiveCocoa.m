@@ -66,11 +66,11 @@
 + (RACSignal *)rac_parseWithParser:(NSXMLParser *)parser
 {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        
+
         return [[RACScheduler scheduler] schedule:^{
-            NSXMLParserRACDelegate * delegate = [[NSXMLParserRACDelegate alloc] init];
+            NSXMLParserRACDelegate *delegate = [[NSXMLParserRACDelegate alloc] init];
             [delegate.elementParsed subscribe:subscriber];
-            
+
             parser.delegate = delegate;
             [parser parse];
         }];
@@ -81,80 +81,70 @@
 {
     // Parsing algorythm inspired by http://troybrant.net/blog/2010/09/simple-xml-to-nsdictionary-converter
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        
-        __block NSMutableArray *stack = [@[ [@{} mutableCopy] ] mutableCopy];
-        __block NSXMLParserRACElement *currentElement;
-        
-        [[signal filter:^BOOL(NSXMLParserRACElement *element) {
-            // If provided delegate to filterBlock to determine which elements to ignore
-            return filterBlock ? filterBlock(element.name) : YES;
-            
-        }] subscribeNext:^(NSXMLParserRACElement *element) {
-            if (element.phase == NSXMLParserRACElementPhaseOpen)
-            {
-                NSMutableDictionary *parent = [stack lastObject];
-                NSMutableDictionary *child = [@{} mutableCopy];
-                
-                if ([element.attributes count])
-                {
-                    for (NSString *key in [element.attributes allKeys]) {
-                        child[key] = element.attributes[key];
+        return [[RACScheduler scheduler] schedule:^{
+            __block NSMutableArray *stack = [@[[@{} mutableCopy]] mutableCopy];
+            __block NSXMLParserRACElement *currentElement;
+
+            [[signal filter:^BOOL(NSXMLParserRACElement *element) {
+                // If provided delegate to filterBlock to determine which elements to ignore
+                return filterBlock ? filterBlock(element.name) : YES;
+
+            }] subscribeNext:^(NSXMLParserRACElement *element) {
+                if (element.phase == NSXMLParserRACElementPhaseOpen) {
+                    NSMutableDictionary *parent = [stack lastObject];
+                    NSMutableDictionary *child = [@{} mutableCopy];
+
+                    if ([element.attributes count]) {
+                        for (NSString *key in [element.attributes allKeys]) {
+                            child[key] = element.attributes[key];
+                        }
                     }
-                }
-                
-                id existing = parent[element.name];
-                if (existing)
-                {
-                    NSMutableArray *array = nil;
-                    if ([existing isKindOfClass:[NSMutableArray class]]) {
-                        array = existing;
+
+                    id existing = parent[element.name];
+                    if (existing) {
+                        NSMutableArray *array = nil;
+                        if ([existing isKindOfClass:[NSMutableArray class]]) {
+                            array = existing;
+                        }
+                        else {
+                            array = [@[] mutableCopy];
+                            [array addObject:existing];
+
+                            parent[element.name] = array;
+                        }
+
+                        [array addObject:child];
                     }
-                    else
-                    {
-                        array = [@[] mutableCopy];
-                        [array addObject:existing];
-                        
-                        parent[element.name] = array;
+                    else {
+                        parent[element.name] = child;
                     }
-                    
-                    [array addObject:child];
+
+                    [stack addObject:child];
                 }
-                else {
-                    parent[element.name] = child;
+
+                if (element.phase == NSXMLParserRACElementPhaseData) {
+                    currentElement = element;
                 }
-                
-                [stack addObject:child];
-            }
-            
-            if (element.phase == NSXMLParserRACElementPhaseData) {
-                currentElement = element;
-            }
-            
-            if (element.phase == NSXMLParserRACElementPhaseClose)
-            {
-                NSMutableDictionary *current = [stack lastObject];
-                if (currentElement.body)
-                {
-                    NSString *sanitized = [currentElement.body stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-                    if (sanitized && ![sanitized isEqualToString:@""]) {
-                        current[@"text"] = sanitized;
+
+                if (element.phase == NSXMLParserRACElementPhaseClose) {
+                    NSMutableDictionary *current = [stack lastObject];
+                    if (currentElement.body) {
+                        NSString *sanitized = [currentElement.body stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                        if (sanitized && ![sanitized isEqualToString:@""]) {
+                            current[@"text"] = sanitized;
+                        }
                     }
+
+                    [stack removeLastObject];
                 }
-                
-                [stack removeLastObject];
-            }
-            
-        } error:^(NSError *error) {
-            [subscriber sendError:error];
-            
-        } completed:^{
-            if ([stack count] > 0) [subscriber sendNext:stack[0]];
-            [subscriber sendCompleted];
-        }];
-        
-        return [RACDisposable disposableWithBlock:^{
-            stack = nil;
-            currentElement = nil;
+
+            }          error:^(NSError *error) {
+                [subscriber sendError:error];
+
+            }      completed:^{
+                if ([stack count] > 0) [subscriber sendNext:stack[0]];
+                [subscriber sendCompleted];
+            }];
         }];
     }];
 }
