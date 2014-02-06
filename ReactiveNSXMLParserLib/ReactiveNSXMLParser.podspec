@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "ReactiveNSXMLParser"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "ReactiveCocoa extensions for NSXMLParser: A concise, stream-based API for parsing XML with NSXMLParser."
 
   s.description  = <<-DESC
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/aceontech/ReactiveNSXMLParser.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/aceontech/ReactiveNSXMLParser.git", :tag => "0.1.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
