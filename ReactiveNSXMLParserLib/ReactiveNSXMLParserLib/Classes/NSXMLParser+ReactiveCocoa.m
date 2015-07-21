@@ -58,6 +58,16 @@
     return [self rac_dictionaryFromSignal:[self rac_parseData:data] elementfilter:filterBlock];
 }
 
+- (RACSignal *)rac_parser
+{
+    return [NSXMLParser rac_parseWithParser:self];
+}
+
+- (RACSignal *)rac_parserWithElementFilter:(ElementFilterBlock)filterBlock
+{
+    return [NSXMLParser rac_dictionaryFromSignal:[self rac_parser] elementfilter:filterBlock];
+}
+
 #pragma mark - Internal
 
 /**

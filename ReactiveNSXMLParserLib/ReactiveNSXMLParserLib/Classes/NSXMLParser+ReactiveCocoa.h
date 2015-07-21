@@ -73,4 +73,20 @@ typedef BOOL (^ElementFilterBlock)(NSString *elementName);
 + (RACSignal *)rac_dictionaryFromString:(NSString *)string
                           elementFilter:(ElementFilterBlock)filterBlock;
 
+/**
+ *  Parse a XML using a pre-init'ed parser.
+ *
+ *  @return RACSignal Will 'next' exactly once, with a NSDictionary parameter
+ */
+- (RACSignal *)rac_parser;
+
+/**
+ *  Parse a XML using a pre-init'ed parser.
+ *
+ *  @param filterBlock ElementFilterBlock (optional) Enables filtering on an element-name level
+ *
+ *  @return RACSignal Will 'next' exactly once, with a NSDictionary parameter
+ */
+- (RACSignal *)rac_parserWithElementFilter:(ElementFilterBlock)filterBlock;
+
 @end
